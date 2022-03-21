@@ -10,6 +10,7 @@ import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';
 import { ZooComponent } from './zoo/zoo.component';
 import { AnimalsState } from './animal.state';
 import { AppState } from './store/app.state';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { AppState } from './store/app.state';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     NgxsModule.forRoot([AnimalsState, AppState], {
       developmentMode : !environment.production
     }),

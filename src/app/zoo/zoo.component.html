@@ -1,1 +1,10 @@
-<p>zoo works!</p>
+<div>
+  <h1>Add animal to store</h1>
+  <form [formGroup]="addAnimalForm" (ngSubmit)="onSubmit()">
+    <input type="text" formControlName="animalName" />
+    <button type="submit">Add</button>
+  </form>
+  <div>
+    <div *ngFor="let animal of (animals$ | async )">{{ animal }}</div>
+  </div>
+</div>
