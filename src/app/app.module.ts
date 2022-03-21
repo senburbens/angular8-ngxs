@@ -9,7 +9,7 @@ import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
 import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';
 import { ZooComponent } from './zoo/zoo.component';
 import { AnimalsState } from './animal.state';
-import { AppState } from './store/app.state';
+import {  SharedState } from './shared/shared.state';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -21,7 +21,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    NgxsModule.forRoot([AnimalsState, AppState], {
+    NgxsModule.forRoot([AnimalsState, SharedState], {
       developmentMode : !environment.production
     }),
     NgxsReduxDevtoolsPluginModule.forRoot(),

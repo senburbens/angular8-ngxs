@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { State } from '@ngxs/store';
 
 @State<{}>({
-  name: 'app',
+  name: 'shared',
   defaults: {}
 })
 @Injectable()
-export class AppState {}
+export class SharedState {}
