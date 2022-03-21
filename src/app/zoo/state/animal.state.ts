@@ -22,4 +22,16 @@ export class AnimalsState {
       action.name
     ]);
   }
+  
+//   @Action(GetSomeData)
+//   loadData({ patchState, dispatch}: StateContext<MyDataModel>, {payload}: GetSomeData) {
+//      return this.myDataService.get(payload.id)
+//      .pipe(
+//         tap((data) => {
+//           patchState({ data: data});
+//           // optionally dispatch here
+//           dispatch(new GetDataSuccess());
+//         })
+//      ); 
+//   } 
 }
