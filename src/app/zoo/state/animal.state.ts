@@ -4,7 +4,7 @@ import { AddAnimal } from './animal.actions';
 
 @State<string[]>({
   name: 'animals',
-  defaults: []
+  defaults: ["dog", 'cat']
 })
 @Injectable()
 export class AnimalsState {

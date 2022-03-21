@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Select, Store } from '@ngxs/store';
 import { Observable } from 'rxjs';
-import { AddAnimal } from '../animal.actions';
-import { AnimalsState } from '../animal.state';
+import { AddAnimal } from '../state/animal.actions';
+import { AnimalsState } from '../state/animal.state';
 
 @Component({
   selector: 'app-zoo',

@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ZooComponent } from './zoo/zoo.component';
 
 
 const routes: Routes = [
   {
-    path : "zoo",
-    loadChildren: () => import('./zoo/zoo.module').then(m => m.ZooModule),
+    path : "",
+    component : ZooComponent
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class ZooRoutingModule { }
