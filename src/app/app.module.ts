@@ -9,6 +9,7 @@ import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
 import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';
 import { ZooComponent } from './zoo/zoo.component';
 import { AnimalsState } from './animal.state';
+import { AppState } from './store/app.state';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { AnimalsState } from './animal.state';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxsModule.forRoot([AnimalsState], {
+    NgxsModule.forRoot([AnimalsState, AppState], {
       developmentMode : !environment.production
     }),
     NgxsReduxDevtoolsPluginModule.forRoot(),
