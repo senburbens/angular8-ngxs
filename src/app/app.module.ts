@@ -9,7 +9,7 @@ import { NgxsReduxDevtoolsPluginModule } from '@ngxs/devtools-plugin';
 import { NgxsLoggerPluginModule } from '@ngxs/logger-plugin';
 import { ZooComponent } from './zoo/zoo.component';
 import { AnimalsState } from './animal.state';
-import {  SharedState } from './shared/shared.state';
+import {  SharedState } from './sharedState/shared.state';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
